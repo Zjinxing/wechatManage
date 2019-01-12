@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'http://zhaojinxing.leanapp.cn/wechatAPI'
-axios.defaults.baseURL = 'http://101.132.37.149/wechatAPI'
-axios.defaults.timeout = 10000
+axios.defaults.baseURL = 'http://zhaojinxing.leanapp.cn/wechatAPI'
+// axios.defaults.baseURL = 'http://101.132.37.149/wechatAPI'
+axios.defaults.timeout = 50000
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 axios.interceptors.request.use(function (config) {
