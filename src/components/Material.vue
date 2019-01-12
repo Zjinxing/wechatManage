@@ -82,10 +82,6 @@ export default {
       if(file) {
         let formData = new FormData()
         formData.append('file', file)
-        formData.append('type', 'image')
-        formData.append('filename', file.name)
-        formData.append('name', 'media')
-        formData.append('filelength', file.size)
         this.$axios.post('/uploadImageMaterial', formData).then(res => {
           console.log(res)
         })
